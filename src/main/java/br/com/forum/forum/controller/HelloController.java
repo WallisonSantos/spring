@@ -16,7 +16,7 @@ public class HelloController {
 
     @RequestMapping("/Topicos")
     public List<Topico> lista(){
-        Topico topico = new Topico("Duvida", "Duvida com Spring", new Curso("Spring", "Programação"));
+        Topico topico = new Topico("Dúvida", "Dúvida com Spring", new Curso("Spring", "Programação"));
 
         return Arrays.asList(topico, topico, topico);
     }
