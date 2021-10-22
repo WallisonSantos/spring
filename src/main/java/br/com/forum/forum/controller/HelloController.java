@@ -1,6 +1,5 @@
 package br.com.forum.forum.controller;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
