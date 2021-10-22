@@ -3,20 +3,16 @@ package br.com.forum.forum.controller;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import br.com.forum.forum.model.Curso;
 import br.com.forum.forum.model.Topico;
 
-@Controller
+@RestController
+@ResponseBody
 public class HelloController {
-    
-    @GetMapping(value="/")
-    public String getMethodName() {
-        return "A Hello Word !";
-    }
 
     @RequestMapping("/Topicos")
     public List<Topico> lista(){
